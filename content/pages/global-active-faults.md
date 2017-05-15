@@ -1,9 +1,9 @@
 Title: GEM Global Active Faults
 Slug: global-active-fault-viewer
-Scripts: leaflet.js, leaflet.ajax.min.js
-Styles: leaflet.css
 
-does this work?
+<script src='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.css' rel='stylesheet' />
+
 
 <div id="mapid" style="width: 600px; height: 400px;"></div>
 <script>
@@ -18,10 +18,19 @@ does this work?
 		id: 'mapbox.streets'
 	}).addTo(mymap);
 
-  var faults = new 
-  L.geoJson.ajax("https://raw.githubusercontent.com/cossatot/gem-global-active-faults/master/geojson/gem_active_faults.geojson",{dataType:"jsonp"});
+  function popUp(f,l){
+    var out = [];
+    if (f.properties){
+        for(key in f.properties){
+            out.push(key+": "+f.properties[key]);
+        }
+        l.bindPopup(out.join("<br />"));
+    }
+  }
 
-  faults.addTo(mymap)
+  var faults = L.mapbox.featureLayer()
+    .loadURL("https://raw.githubusercontent.com/cossatot/gem-global-active-faults/master/geojson/gem_active_faults.geojson")
+    .addTo(mymap);
 
 
 </script>
