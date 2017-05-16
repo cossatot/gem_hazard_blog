@@ -5,7 +5,7 @@ Slug: global-active-fault-viewer
 <link href='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.css' rel='stylesheet' />
 
 
-<div id="mapid" style="width: 600px; height: 400px;"></div>
+<div id="mapid" style="width: 800px; height: 600px;"></div>
 <script>
 
   var mymap = L.map('mapid').setView([31.1, 83.3], 8);
@@ -18,18 +18,21 @@ Slug: global-active-fault-viewer
 		id: 'mapbox.streets'
 	}).addTo(mymap);
 
-  function popUp(f,l){
-    var out = [];
-    if (f.properties){
-        for(key in f.properties){
-            out.push(key+": "+f.properties[key]);
-        }
-        l.bindPopup(out.join("<br />"));
-    }
-  }
-
   var faults = L.mapbox.featureLayer()
     .loadURL("https://raw.githubusercontent.com/cossatot/gem-global-active-faults/master/geojson/gem_active_faults.geojson")
+    .on('ready', function() {
+      faults.eachLayer(function(layer) {
+        //layer.bindPopup(layer.feature.properties.fz_name);
+        var out = [];
+        for(key in layer.feature.properties){
+          if (layer.feature.properties[key] != null){
+            out.push(key+": "+layer.feature.properties[key]);
+            }
+          }
+        layer.bindPopup(out.join("<br />"));
+        //  layer.bindPopup(key+": "+feature.properties[key]+"<br />")
+        });
+      })
     .addTo(mymap);
 
 
