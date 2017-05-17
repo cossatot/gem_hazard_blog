@@ -17,6 +17,9 @@
     <article>
         <header>
             <h1>{{ article.title }}</h1>
+            {% if article.author %}
+              <h3>{{ article.author }}</h3>
+            {% endif %}
             <time datetime="article.date.isoformat()" pubdate>{{ article.locale_date }}</time>
         </header>
 
