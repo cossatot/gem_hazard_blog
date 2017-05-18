@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'GEM Hazard Team'
 SITENAME = 'Global Earthquake Model Hazard blog'
-SITEURL = 'http://blogs.openquake.org/hazard'
+SITEURL = 'https://blogs.openquake.org/hazard'
 
 PATH = 'content'
 
