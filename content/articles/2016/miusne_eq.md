@@ -32,7 +32,7 @@ indicate the position of the epicenter of the 2016 earthquake according to the
 USGS and the Geophysical Institute of the Escuela Politecnica National in 
 Quito, respectively.
 
-![ ](/images/2016/miusne/epic_distr_events.png)
+![ ]({filename}/images/2016/miusne/epic_distr_events.png)
 *Past seismicity included in the historical and instrumental components of the 
 SARA catalogue. The red and blue stars show the epicenter of the Muisne 
 Earthquake according to the USGS and Istituto Geofisico in Quito, 
@@ -47,7 +47,7 @@ occurred during the last century and the areas where potential gaps were
 identified using non-linear inversion of GPS measurements to determine the 
 interseismic coupling distribution.
 
-![ ](/images/2016/miusne/Screen-Shot-2016-04-18-at-16.09.07.png)
+![ ]({filename}/images/2016/miusne/Screen-Shot-2016-04-18-at-16.09.07.png)
 *Subduction interface sources included in the SARA hazard model (Garcia et al., 
 2016). The star shows the position of the epicenter of the 2016 earthquake.*
 
@@ -81,7 +81,7 @@ However, should the largest values of shaking computed by the USGS Shakemap be
 confirmed, based on the hazard models considered these can be associated with 
 return periods close or lower than 475 years.
 
-![ ](/images/2016/miusne/rt7_hazard_map-mean-0.002105-PGA_9575_wm.png)
+![ ]({filename}/images/2016/miusne/rt7_hazard_map-mean-0.002105-PGA_9575_wm.png)
 *Seismic hazard map for South America computed using the SARA hazard model 
 (Garcia et al, 2016). The map shows PGA with 2% probability of exceedence in 50 
 years.*
@@ -92,7 +92,7 @@ polygon i08 in the Figure below). The overall geometry of the fault appears to
 be consistent with the finite rupture solution provided by the USGS although 
 the dip angle seems lower in the latter case.
 
-![ ](/images/2016/miusne/SARA16_interface_model.png)
+![ ]({filename}/images/2016/miusne/SARA16_interface_model.png)
 *Subduction interface sources included in the SARA hazard model (Garcia et al., 
 2016). The star shows the position of the epicenter of the 2016 earthquake.*
 
