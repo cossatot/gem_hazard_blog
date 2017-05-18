@@ -2,6 +2,7 @@ Title: New GEM dataset of active faults in the Caribbean and Central America
 Date: 2017-05-16
 Slug: c-am-car-faults
 Author: Richard Styron
+Status: Draft
 
 The [Global Active Faults][gem-gaf] project of the [GEM Foundation][gem] aims 
 to produce a globally complete, reasonably homogeneous dataset of active faults 

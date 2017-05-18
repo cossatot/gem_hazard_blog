@@ -85,4 +85,4 @@ Slug: global-active-fault-viewer
 
 </script>
 
-I wanna see the faults!
+Thanks to USAID for sponsoring the Global Active Faults Project.
