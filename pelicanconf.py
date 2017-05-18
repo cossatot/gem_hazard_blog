@@ -32,8 +32,8 @@ TWITTER_USERNAME = 'gem_hazard'
 
 # Page structure
 SHOW_ARCHIVES = True
-ABOUT_PAGE = '/about/'
-GAF_PAGE = '/global-active-fault-viewer/'
+ABOUT_PAGE = (SITEURL + '/about/')
+GAF_PAGE = (SITEURL + '/hazard/global-active-fault-viewer/')
 
 # static page formatting
 PAGE_URL = '{slug}/'
