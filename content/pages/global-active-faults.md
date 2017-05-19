@@ -1,6 +1,13 @@
 Title: GEM Global Active Faults
 Slug: global-active-fault-viewer
 
+
+The GEM Global Active Faults project is compiling a global dataset of active
+faults for seismic hazard assessment as well as research, education and
+general interest. While this is a work in progress, we've got a lot of the
+world covered already. Check out the map below, and click on any fault for more
+information!
+
 <script src='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.css' rel='stylesheet' />
 
@@ -53,7 +60,7 @@ Slug: global-active-fault-viewer
   };
 
   var faults = L.mapbox.featureLayer()
-    .loadURL("https://raw.githubusercontent.com/cossatot/gem-global-active-faults/master/geojson/gem_active_faults.geojson")
+    .loadURL("https://raw.githubusercontent.com/GEMScienceTools/gem-global-active-faults/master/geojson/gem_active_faults.geojson")
     .on('ready', function() {
       faults.eachLayer(function(layer) {
         //layer.bindPopup(layer.feature.properties.fz_name);
@@ -85,4 +92,40 @@ Slug: global-active-fault-viewer
 
 </script>
 
-Thanks to USAID for sponsoring the Global Active Faults Project.
+Many thanks to USAID for funding the GEM Global Active Faults project, and to
+the many geoscientists and organizations who have made the regional catalogs
+used in this work.
+
+### Data Sources
+
+Catalog                | Publication           | Data Link
+-----------------------|-----------------------|-----------
+USGS Hazfaults 2014    | [Machette et. al 2003][qf] | [https://earthquake.usgs.gov/hazards/qfaults/](https://earthquake.usgs.gov/hazards/qfaults/)
+SHARE                  | [Woessner et al. 2013][sh] | [www.efehr.org](www.efehr.org)
+Active Tectonics of the Andes | [Veloza et al. 2012][vz] | [https://github.com/ActiveTectonicsAndes/ATA](https://github.com/ActiveTectonicsAndes/ATA)
+Macgregor Africafaults | [Macgregor 2015][mac]      | (*none*)
+EMME                   | [Danciu et al. 2014][em]   | [www.efehr.org](www.efehr.org)
+GEM Active Faults      | (*none*)                   | [https://github.com/GEMScienceTools/gem-global-active-faults](https://github.com/GEMScienceTools/gem-global-active-faults)
+HimaTibetMap           | [Styron et al. 2010][st]   | [https://github.com/HimaTibetMap/HimaTibetMap](https://github.com/HimaTibetMap/HimaTibetMap)
+Myanmar                | (*none*)                   | (*none*)
+GEM Central Am. Carib  | Styron et al. *in prep*.         | [https://github.com/GEMScienceTools/central_am_carib_faults](https://github.com/GEMScienceTools/central_am_carib_faults)
+GEM N. Africa          | Styron, *in prep*.  | [https://github.com/GEMScienceTools/n_africa_active_faults](https://github.com/GEMScienceTools/n_africa_active_faults)
+Philippines            | (*none*)                   | (*none*)
+SARA                   | (*none*)                   | [http://ftp.openquake.org/data/sara/hazard/t2/SARA_T2_HF.zip](http://ftp.openquake.org/data/sara/hazard/t2/SARA_T2_HF.zip)
+Thailand               | (*none*)                   | (*none*)
+Taiwan                 | [Shyu et al. 2016][sh]     | [http://tao.cgu.org.tw/index.php/articles/archive/geophysics/item/download/2182_65e077a158d69f598522df397124c99d](http://tao.cgu.org.tw/index.php/articles/archive/geophysics/item/download/2182_65e077a158d69f598522df397124c99d)
+
+
+<br>
+Questions? Concerns? Suggestions about data? Please contact Richard Styron at
+richard.styron (at) globalquakemodel.org.
+
+
+[qf]: https://pubs.er.usgs.gov/publication/ofr03417
+[sh]: http://link.springer.com/article/10.1007/s10518-015-9795-1
+[vz]: https://www.geosociety.org/gsatoday/archive/22/10/article/i1052-5173-22-10-4.htm
+[mac]: http://www.sciencedirect.com/science/article/pii/S1464343X14003240
+[em]: http://link.springer.com/article/10.1007/s10518-017-0096-8
+[st]: http://onlinelibrary.wiley.com/doi/10.1029/2010EO200001/full
+[sh]: http://tao.cgu.org.tw/index.php/articles/archive/geophysics/item/1376
+

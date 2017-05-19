@@ -24,7 +24,10 @@ reflects the highly variable style of tectonic deformation in the region: many
 styles of deformation are present, with the only consistent theme being that 
 these faults slip quite fast.
 
-## Faulting in Central America and the Caribbean
+Check out the interactive web map below showing the most up-to-date version of
+the fault database! You can click on the faults to see all the available
+information about them.
+
 
 <script src='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.css' rel='stylesheet' />
@@ -110,6 +113,8 @@ these faults slip quite fast.
 
 </script>
 *GEM Central American and Caribbean active fault data*
+
+## Faulting in Central America and the Caribbean
 
 Faulting in the region blah blah blah
 
