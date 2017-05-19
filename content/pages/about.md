@@ -1,15 +1,21 @@
 Title: About the GEM Hazard Team
 Slug: about
 
-GEM hazard team develops a comprehensive suite of tools for building earthquake 
-hazard model and for computing seismic hazard. We also collaborate with several 
-national organisations and international projects at the development of new and 
-openly accessible earthquake hazard models. One of our current major goals is 
-the construction of a mosaic of hazard models that by the end of 2018 will have 
-global coverage. This mosaic is built relying a much as possible on models 
-created either through community-based project or by renown national agencies 
-and international projects.
+The [GEM][GEM] Hazard Team is a small group of scientists focused on global and 
+regional seismic hazard assessment. We develop openly-accessible earthquake 
+hazard models at the regional level, typically in collaboration with national 
+organizations and international projects. We also develop a [comprehensive, 
+state-of-the-art suite of open-source earthquake hazard and risk modeling 
+tools][openquake] that we and other organizations use to develop hazard models 
+and related analysis at a range of scales.
 
+One of our current major projects is the construction of a global mosaic of 
+hazard models. This mosaic is built by synthesizing community-based or 
+national/international projects where available, and creating new, openly 
+accessible models in regions where current coverage is lacking.
+
+For more information on the GEM Hazard Team and its projects, check out the 
+[GEM Hazard Wiki][gw].
 
 ### About the GEM Global Active Faults project
 
@@ -22,3 +28,7 @@ education, and curiosity satisfaction as well.
 
 
 [GEM]: www.globalquakemodel.org
+
+[gw]: https://hazardwiki.openquake.org/
+
+[openquake]: https://www.globalquakemodel.org/openquake/about/
