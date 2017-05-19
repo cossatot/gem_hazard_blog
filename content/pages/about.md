@@ -27,7 +27,7 @@ education, and curiosity satisfaction as well.
 
 
 
-[GEM]: www.globalquakemodel.org
+[GEM]: https://www.globalquakemodel.org
 
 [gw]: https://hazardwiki.openquake.org/
 
